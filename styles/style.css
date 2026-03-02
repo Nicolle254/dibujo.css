@@ -1,0 +1,142 @@
+body{
+background-color: rgb(255, 212, 148);
+}
+
+h1 {
+color: blueviolet;
+ font-weight: bold;
+ font-size: 100px;
+ text-decoration-style: wavy;
+}
+
+div
+{ background-color: rgba(0, 255, 255, 0);
+width: 50vw;
+}
+
+
+#divunico { background-color: aqua(43, 226, 171);}
+
+#dibujo{ width: 40vw;
+height: 40vw;
+background-color: rgb(197, 186, 255);
+display:flex;
+justify-content: center;
+align-items:center;
+}
+
+#cara { width: 20%;
+height: 90%;
+background-color: rgb(66, 116, 67);
+border-radius: 50%;
+position:relative;
+transition: all 6s;
+animation-name: cambiodecolor;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+}
+
+@keyframes cambiodecolor {
+  0%   {background-color:rgb(42, 255, 163); left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:rgb(154, 228, 255); left:0px; top:200px;}
+  100% {background-color:rgb(255, 63, 166); left:0px; top:0px;}
+}
+
+
+#cara:hover {
+transform: rotate(360deg) scale(0.5);
+}
+
+.ojos{
+width: 20%;
+height: 20%;
+border-radius: 50%;
+background-color: aliceblue;
+position:absolute;
+}
+
+#ojoizq { top: 20%;
+left: 20%;
+
+}
+
+
+#ojoder{ top: 20%;
+right: 20%;
+
+}
+#boca { justify-content: center;
+width: 30%;
+height:20%;
+background-color: rgb(227, 58, 58);
+position: absolute;
+top:60%;
+left: 35%;
+border-radius: 0 0 50% 50%;
+}
+#boca:hover
+{ left: 50%;
+background-color: pink;
+}
+
+
+#nariz{ justify-content: center;
+
+width: 40px;
+height: 40px;
+background-color: #c2f6df; /* Color de piel */
+border-radius: 30%;
+position: relative;
+margin: 50px auto;
+box-shadow: 0 4px 6px rgba(0,5,0, 8); /* Sombra inferior */
+top: 35%;
+}
+
+.pupilas{
+width: 40%;
+height: 40%;
+border-radius: 50%;
+background-color: rgb(167, 230, 255);
+position:absolute;
+}
+
+
+#pupilaizq { top: 20%;
+left: 20%;
+}
+
+
+#pupilader { top: 20%;
+right: 20%;
+}
+
+.personaje {
+position: relative;
+width: 200px;
+height: 300px;
+margin: 50px auto;
+}
+.sombrero { position: absolute;
+top: 0;
+}
+.copa {
+width: 100px;
+height: 80px;
+background-color: #333;
+margin: 0 auto;
+border-radius: 10px 10px 0 0;
+position: relative;
+z-index: 2;
+}
+
+.ala {
+width: 160px;
+height: 20px;
+background-color: #333;
+margin: -5px auto 0;
+border-radius: 50px;
+position: relative;
+z-index: 2;
+}
